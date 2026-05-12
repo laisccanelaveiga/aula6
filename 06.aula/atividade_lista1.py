@@ -16,9 +16,9 @@
 medias = []
 contador = 0
 
-for i in range(15):
+for i in range(2):
     notas = []
-    contador += 1
+    contador += 1 #professor não usou contador
 
     for nota in range(4):
         entrada_notas = float(input(f"Insira a nota {nota + 1}: "))
@@ -37,5 +37,6 @@ for i in range(15):
     
     print()
 
-print(medias)    
+for i, media in enumerate(medias):
+    print(f"Aluno {i+1} | Média: {media}")    
 
